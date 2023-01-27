@@ -1,0 +1,882 @@
+.tinder {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.menuColl {
+  width: 70%;
+  height: 100vh;
+  background-color: red;
+}
+
+
+.lineHeader {
+  width: 70%;
+  height: 2px;
+  background-color: rgb(36, 36, 36);
+}
+
+            
+.navbarHref {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.navbarhrefhakk {
+  color: #000;
+  font-size: 12px;
+}
+
+.loaded.tinder {
+  opacity: 1;
+}
+
+.tinder--status {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.tinder--status i {
+  font-size: 100px;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+}
+
+.tinder_love .fa-heart {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.tinder_nope .fa-remove {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.tinder--cards {
+  flex-grow: 1;
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.tinder--card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 400px;
+  height: 70vh;
+  background: #FFFFFF;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.moving.tinder--card {
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.tinder--card img {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.tinder--card h3 {
+  margin-top: 32px;
+  font-size: 32px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.tinder--card p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.tinder--buttons {
+  flex: 0 0 100px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.tinder--buttons button {
+  border-radius: 50%;
+  line-height: 60px;
+  width: 60px;
+  border: 0;
+  background: #FFFFFF;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.tinder--buttons button:focus {
+  outline: 0;
+}
+
+.tinder--buttons i {
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.fa-heart {
+  color: #FFACE4;
+}
+
+.fa-remove {
+  color: #CDD6DD;
+}
+
+.posSwiper {
+  position: absolute;
+}
+
+.oops {
+  width: 100%;
+  height: 100vh;
+  background-color: #20252D;
+  display: flex;
+  flex-direction: row;
+}
+
+.oopsText {
+  flex: .4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 160px;
+}
+
+.oopsImage {
+  flex: .6;
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  text-align: start;
+}
+
+.cardSoru {
+  min-height: 250px;
+  background-color: #20252D;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardSoruFlex {
+  flex: 1;
+  background-color: red;
+  display: flex;
+}
+
+.cardSoruFlexLeft {
+  flex: 1;
+  background-color: #66DE8D;
+  display: flex;
+  flex-direction: column;
+}
+
+.borderClor {
+  border: 4px solid;
+  border-color: #FFD051;
+}
+
+.cardStyle {
+  width: 140px;
+  height: 40px;
+  background-color: #FFD051;
+}
+
+.borderClorCevap {
+  border: 4px solid;
+  border-color: #83D7EB;
+}
+
+.cardStyleCevap {
+  width: 140px;
+  height: 40px;
+  background-color: #83D7EB;
+}
+
+.cardsSoru {
+  flex: 1;
+  background-color: #000;
+}
+
+.avatarImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid;
+  border-color: #fff;
+}
+
+.cardSoruFlexright {
+  flex: 1;
+  background-color: #47564c;
+}
+
+.posSwiperSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grdicommadd {
+  padding: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  background-color: #F6F6F6;
+}
+.homePageRastgele {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.homePageSecim {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+}
+.detayhomePage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #fff;
+}
+
+.homePage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #fff;
+}
+
+.footerText {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.homeFlex {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  max-width: 100%;
+}
+
+
+
+.timeSecim {
+  flex: .2;
+  display: flex;
+  flex-direction: row;
+}
+
+.partiTrans {
+  flex: .8;
+  padding: 10px;
+}
+.timeLeft {
+  flex: .3;
+  padding: 20px;
+  display: flex;
+}
+
+.gridCommet {
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+  
+}
+
+.meclisImage {
+  flex: .7;
+  display: flex;
+  padding: 20px;
+}
+
+.boxTime {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  padding: 10px;
+}
+
+.boxTopColor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.answerButton {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.commentUse {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.commentUseTinder {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.topText {
+  flex: .3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeBottom {
+  flex: .7;
+  display: flex;
+  flex-direction: row;
+}
+
+.dayTime {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maxWidthSlider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+}
+
+.hourTime {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.minuteTime {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kategoriSelect {
+  margin-top: 20px;
+}
+
+
+
+
+.partiCompare {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.swiper-autoheight, .swiper-autoheight .swiper-slide {
+  height: 400px !important;
+}
+
+.sadasdasd {
+  height: 400px;
+}
+
+.compareText {
+  padding: 10px;
+}
+
+.secimıncele {
+  width: 100%;
+  min-height: 400px;
+  padding: 0px;
+  display: flex;
+  margin-top: 20px;
+  background-color: 'red';
+  max-width: 100%;
+}
+
+.secimboxInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.progressColor {
+  background-color: 'red';
+}
+
+.backgroundbutton {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.katilkatilmaButton {
+flex: 1;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.kapataButton {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.buttonKatil {
+  border-radius: 0 ;
+  background-color: #66DE8D ;
+  width: 150px;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+}
+
+.buttonKatilma {
+  background-color: #FF4E4F;
+  border-radius: 0 ;
+  width: 150px;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+}
+
+.buttonKapat {
+  border-radius: 0 !important;
+  background-color: #DDDDDD !important;
+  color: #000 !important;
+  width: '100%' !important;
+
+}
+
+.gridBox {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.gridBoxOne {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  max-width: 50%;
+}
+
+.gridBoxTwo {
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  max-width: 50%;
+}
+
+.boxone {
+  flex: 1;
+  background-color: #20252D;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.boxtwo {
+  flex: 1;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.beyanSlider {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .thirteen::before {
+    animation: none;
+  }
+
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .content {
+    padding: 4rem;
+  }
+
+  .meclisImage {
+    padding: 10px;
+  }
+
+  .timeLeft {
+    padding: 10px;
+  }
+ 
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1rem 2.5rem;
+  }
+
+  .card h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .center {
+    padding: 8rem 0 6rem;
+  }
+
+  .center::before {
+    transform: none;
+    height: 300px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .description a {
+    padding: 1rem;
+  }
+
+  .description p,
+  .description div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  .description p {
+    align-items: center;
+    inset: 0 0 auto;
+    padding: 2rem 1rem 1.4rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
+    background: linear-gradient(
+      to bottom,
+      rgba(var(--background-start-rgb), 1),
+      rgba(var(--callout-rgb), 0.5)
+    );
+    background-clip: padding-box;
+    backdrop-filter: blur(24px);
+  }
+
+  .description div {
+    align-items: flex-end;
+    pointer-events: none;
+    inset: auto 0 0;
+    padding: 2rem;
+    height: 200px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgb(var(--background-end-rgb)) 40%
+    );
+    z-index: 1;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (max-width: 1278px) {
+  .gridCardSlide {
+   width: 100%;
+  }
+ }
+
+@media  (max-width: 1230px) {
+  .gridBox {
+    flex-direction: column;
+  }
+
+  .maxWidthSlider {
+    width: 100%;
+    max-width:100%;
+  }
+
+  .gridBoxOne {
+    max-width: 100%;
+  }
+
+  .gridBoxTwo {
+    max-width: 100%;
+  }
+  .cardStyle {
+    width: 100%;
+   }
+  
+   .cardStyleCevap {
+    width: 100%;
+   }
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .topTextRes {
+    font-size: 12px;
+    transition: .6s;
+  }
+
+  .dayTimeResp {
+    font-size: 23px;
+  }
+
+  .dayTimeTextResp {
+    font-size: 10px;
+  }
+}
+
+
+
+
+@media (max-width: 650px) {
+  .timeSecim {
+    flex-direction: column;
+  }
+
+  .homeFlex {
+    width: 100%;
+  }
+
+  .gridBoxOne {
+    padding: 0;
+  }
+
+  .gridBoxTwo {
+    padding: 0;
+  }
+
+  .partiTrans {
+    padding: 0;
+  }
+
+  
+
+  .gridCommet {
+    margin-left: 0px !important;
+    margin-right: 30px !important;
+  }
+
+ 
+}
+
+@media (max-width: 560px) {
+
+  /* .buttonKatil {
+    width: 00px;
+  }
+
+  .buttonKatilma {
+  } */
+
+  .grdicommadd {
+    padding: 10px;
+  }
+
+  .buttonSResp {
+    flex-direction: column;
+  }
+
+  .buttonSelectResp {
+    margin: 0 !important;
+    margin-top: 10px !important;
+  }
+ 
+  .cardStyle {
+    width: 100%;
+   }
+  
+   .cardStyleCevap {
+    width: 100%;
+   }
+}
+
+
+@media (max-width: 500px) {
+  .secimboxInfo {
+    width: 100%;
+  }
+
+  /* .homePage {
+    padding: 0;
+  } */
+
+  .avatarSize {
+   size: 30;
+  }
+
+  .maxWidthSlider {
+    width: 100%;
+    max-width:100vmin;
+  }
+ 
+   .RespShowHide {
+    display: none;
+  }
+
+  .cardStyle {
+    width: 100%;
+   }
+  
+   .cardStyleCevap {
+    width: 100%;
+   }
+    .gridxsMaxwidth {
+      max-width: 100% !important;
+    }
+}
+
+@media (max-width: 430px) {
+  .boxone {
+    padding: 0;
+  }
+
+  .boxtwo {
+    padding: 0;
+  }
+
+  .buttonKatil {
+    width: 120px;
+    font-size: 13px;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .buttonKatilma {
+    width: 120px;
+    font-size: 13px;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .yorumResp {
+    font-size: 12px;
+  }
+  .cardStyle {
+    width: 100%;
+   }
+  
+   .cardStyleCevap {
+    width: 100%;
+   }
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .vercelLogo {
+    filter: invert(1);
+  }
+
+  .logo,
+  .thirteen img {
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"rastgele.js -> react-tinder-card":{"id":"rastgele.js -> react-tinder-card","files":["static/chunks/node_modules_react-tinder-card_index_js.js"]}}
